@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Matt Smith">
+    <link rel="icon" href="favicon.ico">
+
+    <title>SIMS Bulk Import</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="//simsbulkimport.uk/css/custom.css">
+	
+    <!-- Custom Fonts -->
+    <link href="//simsbulkimport.uk/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <style id="holderjs-style" type="text/css"></style>
+</head>
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <a href="//github.com/simsbulkimport/simsbulkimport"><img style="position: absolute; top: 0; right: 0; border: 0;" src="//camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="//s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="//simsbulkimport.uk/img/logo.png" title="SIMS Bulk Import logo" alt="" />
+                <a class="navbar-brand" href="#page-top">SIMS Bulk Import</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="//simsbulkimport.uk/">Home</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="//simsbulkimport.uk/download/">Download</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="//simsbulkimport.uk/#features">Features</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="//simsbulkimport.uk/#faqs">FAQs</a>
+                    </li>
+					<li class="page-scroll">
+                        <a href="//simsbulkimport.uk/versions/">Versions</a>
+                    </li>
+					<li class="page-scroll">
+                        <a href="//simsbulkimport.uk/logs/">Logs</a>
+                    </li>
+					<li class="page-scroll">
+                        <a href="//simsbulkimport.uk/stats/">Stats</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-text">
+                        <span class="name">Bulk Import into SIMS .net</span>
+                        <hr class="star-light">
+                        <span class="skills">Import email addresses, telephones number as well as UDF fields from CSV, an Excel Spreadsheet or a xml file, directly into SIMS .net.</span>
+                        <div class="btn-cust"><a href="/download/" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-download-alt"></span> Download</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+	<section id="features">
+
+
+	    <div class="content-section-a">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Safe</h2>
+                        <p class="lead">SIMS Bulk Import uses the SIMS Business Objects. Meaning bulk importing is as safe as manually entering it in. If duplicate records are found, it won't import. If you don't have access in SIMS .net to enter a field, you can't bulk import it.</p>
+                    </div>
+                    
+                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                        <div class="features-item">
+                        <a href="#featuresModal1" class="features-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/Screenshot_1_Login.png" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section-b">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Free</h2>
+                        <p class="lead">SIMS Bulk Import is completely free and open-source. No license fees. No maintainence charges.</p>
+                    </div>
+                    <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                        <div class="features-item">
+                        <a href="#featuresModal2" class="features-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/Screenshot_2_LoggedIn.png" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    	
+	    <div class="content-section-a">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Dynamic</h2>
+                        <p class="lead">Don't be limited to fixed columns, match your file's columns to SIMS .net fields</p>
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                        <div class="features-item">
+                        <a href="#featuresModal4" class="features-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/Screenshot_4_Matching.png" class="img-responsive" alt>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	
+        <div class="content-section-b">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Logs</h2>
+                        <p class="lead">View, filter and securely submit logs, all without leaving the app</p>
+                    </div>
+                    <div class="col-lg-5 col-sm-pull-6 col-sm-6">
+                        <div class="features-item">
+                        <a href="#featuresModal3" class="features-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/Screenshot_3_LogViewer.png" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+	</section>
+	
+    <!-- FAQs Section -->
+    <section id="faqs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>FAQs</h2>
+                    <hr class="star-light">
+                </div>
+				<!-- Question 1: Where can I download the source code? -->
+				<div class="col-lg-12">
+					<div class="panel-group" id="accordion">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Q. Where can I download the source code?</a>
+								</h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse">
+								<div class="panel-body" >
+									A. You can download the source code from <a href="https://github.com/simsbulkimport" title="https://github.com/simsbulkimport">GitHub</a>.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+                <!-- Question 2: Can I get paid support? -->
+				<div class="col-lg-12">
+					<div class="panel-group" id="accordion">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Q. Can I get paid support?</a>
+								</h4>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse">
+								<div class="panel-body" >
+									A. No. Some support teams might support SIMS Bulk Import, it's entirely their decision. They may wish to charge you a small fee to cover training and any additional resources required to support this. Again, this is solely at the Support Teams discretion.  <br/>
+									<br/>
+									<a href="http://www.salamandersoft.co.uk">SalamanderSoft</a> and <a href="http://schoolsict.net">SchoolsICT</a> have both indicated they are willing to support SIMS Bulk Import.<br/>
+									<br/>
+									<a href="http://www.salamandersoft.co.uk/activeDirectory.html">SalamanderSoft</a> provide provisioning solutions on a commercial basis, which includes, but not limited to, automatically generating Active Directory user accounts, email addresses upon admission with write back into SIMS .net.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Question 3: Where is this site hosted? -->
+				<div class="col-lg-12">
+					<div class="panel-group" id="accordion">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Q. Where is this site hosted?</a>
+								</h4>
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse">
+								<div class="panel-body" >
+									A. The server is located in Cambridge, UK and is hosted by <a href="https://www.mythic-beasts.com/">mythic-beasts</a>.
+									<br/>
+									<img src="img/mythicbeasts300x93.png" width="300px" height="93" title="mythic-beasts"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        by <a href="https://matt40k.uk">@matt40k</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visble-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- features Modals -->
+    <div class="features-modal modal fade" id="featuresModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Login</h2>
+                            <hr class="star-primary">
+                            <img src="img/Screenshot_1_Login.png" class="img-responsive img-centered" alt="">
+                            <p>SIMS Bulk Import uses your SIMS .net login. Now supports Windows Trusted logins!</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="features-modal modal fade" id="featuresModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>New User Interface</h2>
+                            <hr class="star-primary">
+                            <img src="img/Screenshot_2_LoggedIn.png" class="img-responsive img-centered" alt="">
+                            <p>SIMS Bulk Import's user interface has been improved.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="features-modal modal fade" id="featuresModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Logs</h2>
+                            <hr class="star-primary">
+                            <img src="img/Screenshot_3_LogViewer.png" class="img-responsive img-centered" alt="">
+                            <p>View, filter logs, all without leaving the app</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="features-modal modal fade" id="featuresModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Matching</h2>
+                            <hr class="star-primary">
+                            <img src="img/Screenshot_4_Matching.png" class="img-responsive img-centered" alt="">
+                            <p>Match your file's columns against SIMS .net fields, dynamically - no more first column must be forename.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+	
+
+    <!-- Plugin JavaScript -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="//simsbulkimport.uk/js/classie.js"></script>
+    <script src="//simsbulkimport.uk/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="//simsbulkimport.uk/js/freelancer.js"></script>
+	
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-65729311-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+  
+	</body>
+</html>
